@@ -6,6 +6,11 @@ Do not change the code given in the main() function when you are implementing yo
 
 #include <stdio.h>
 
+//function declaration
+int minimum(int n1, int n2);
+int maximum(int n1, int n2);
+int multiply(int n1, int n2);
+
 int main() {
    int no1, no2;
    printf("Enter a value for no 1 : ");
@@ -16,4 +21,39 @@ int main() {
    printf("%d ", maximum(no1, no2));
    printf("%d ", multiply(no1, no2));
    return 0;
+}
+
+//funtion definitions
+int minimum(int n1, int n2)//finding minimum
+{
+  if (n1>n2)
+  {
+    return n2;
+  }
+  else if (n2>n1)
+  {
+    return n1;
+  }
+return 0;
+}
+
+int maximum(int n1, int n2)//finding maximum
+{
+  if (n1>n2)
+  {
+    return n1;
+  }
+  else if (n2>n1)
+  {
+    return n2;
+  }
+return 0;
+}
+
+int multiply(int n1, int n2)//multiplying numbers
+{
+  int n3;
+
+  n3=n1*n2;
+  return n3;
 }
